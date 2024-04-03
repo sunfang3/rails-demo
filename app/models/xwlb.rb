@@ -1,0 +1,2 @@
+class Xwlb < ApplicationRecord
+end

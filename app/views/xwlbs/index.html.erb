@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Xwlbs</h1>
+
+<div id="xwlbs">
+  <% @xwlbs.each do |xwlb| %>
+    <%= render xwlb %>
+    <p>
+      <%= link_to "Show this xwlb", xwlb %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New xwlb", new_xwlb_path %>
