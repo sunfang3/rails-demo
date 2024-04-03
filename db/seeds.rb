@@ -7,3 +7,8 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+require 'csv'
+
+CSV.foreach("db/new.csv") do |row|
+    Xwlb.create!(date: row[0], index_of_day: row[1], title: row[2], fulltext: row[3])
+end
